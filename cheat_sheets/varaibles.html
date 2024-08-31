@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables Cheet Sheet</title>
+</head>
+<body>
+    <p id="nameprint"></p>
+    <p id="nameprint_temlit"></p>
+    <p id="calculation">0</p>
+   
+
+    <script>
+        // Vår første javascript kommentar: 
+        // Bruk fornuftig varaible navn på engelsk, for eksempel ikke:
+        const firstname = "Rawez"
+        //Skriver ut firstname til konsolen:
+        console.log(firstname)
+        // Skriver ut firstname til HTML med konkatirenig:
+        document.getElementById("nameprint").innerHTML = "Hei "  + firstname
+        // skrive ut firsname til HTML med template literal
+     //document.getElemntById("nameprint_temlit").innerHTML = ´Hei $`{firsname}.Går det bra med deg?´
+        // Skrive ut et enkelt mattestykke:
+        document.getElementById("calculation").innerHTML = 10 + 5
+
+    </script>
+</body>
+</html>
