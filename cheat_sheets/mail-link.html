@@ -7,12 +7,16 @@
 </head>
 <body>
 
-    <p id="en maillink"><a href="mailto:rawez@gmail.com">Send mail til Rawez</a></p>
+    <p id="maillink"></p>
     <script>
-        const full_name = "Rawez";
-        let mail  = "rawez@gmail.com";
-        let emaillink = full_name + " " + mail;
-        document.getElementById("en maillink").innerHTML = emaillink;
+        //lag variabel:
+        const name = "Rawez";
+        const email  = "rawez@gmail.com"
+
+        //Build the email link with template literal:
+        const emaillink = `<a href="mailto:${email}">Send mail til ${name}</a>`
+        //print the email link to the HTML element with id maillink
+        document.getElementById("maillink").innerHTML = emaillink;
 
     </script>
 </body>
