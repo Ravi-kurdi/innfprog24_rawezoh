@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays cheat sheet</title>
+</head>
+<body>
+    <h2>Arrayer</h2>
+    <p>Dette juksearket funker best med konsollen åpen</p>
+    <h3>Filmarray (<span id="moviecount">0</span>)filmer</h3>
+    <p>Film på index 3: <span id="title">?</span></p>
+
+    <script>
+        // Index i array starter med 0:
+        // opprette en array med Filmtitler:
+
+        const moviearray = ["Interstellar", "Top Gun", "Titanic", "Dum og dummere", "Cool runnings", "pokemon", "Ikke krøl med zohan"]
+        
+        
+
+        //legge til et element på slutten av en array:
+        moviearray.push("The exorcist")
+        // Å slette en film (med en bestemt index):
+        // Den sletter index 3 i gruppen og det er 1 film (3, 1)
+        moviearray.splice(3, 1)
+
+        //Sjekke etter en bestemt element i arrayen:
+        const movieexist = moviearray.includes("Titanic")
+        console.log("Finnes Titanic? " + movieexist)
+        //Sortere en array fra a til Å, sort funker kun på tekst:
+        moviearray.sort()
+        //Sortere fra A til Å:
+        moviearray.reverse()
+
+        //
+        const numbersarray = [4, 78, 6, 90, 123, 5, 74]
+        // Sortere array med tall ,lavest tall først, pugge denne funksjonen når du skal sortere:
+        numbersarray.sort(function(a,b) {return a-b}) 
+        // Hvis vi ønsker å sortere med høyeste tall først. la funksjonene retunere b-a:
+
+
+
+        //Skriv ut antallfilmer:
+        document.getElementById("moviecount").innerHTML = moviearray.length
+        // Vis moviearray i konsoll:
+        // skriv file med index 3:
+        const index = 3;
+        document.getElementById("title").innerHTML = moviearray[index]
+        console.log(moviearray)
+    </script>
+    
+</body>
+</html>
