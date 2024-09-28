@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops cheat sheet</title>
+</head>
+<body>
+<h1>Regn ut summen av alle tall mellom <span id="start">x</span> og <span id="stop"></span></h1>
+<p id="utregning"></p>
+
+<h1>Vis alle tall som er deling på <span id="delall"></span>mellom <span id="deltall"></span></h1>
+    <script>
+
+
+        /* 
+            for-løkke trenger tre parametere 
+            1) startpunkt 
+            2) stop-punkt
+            3) utregning av teller 
+         */
+
+         for(let teller = 1; teller <=10; teller++) {
+            console.log(teller)
+         }
+
+         /*
+
+           
+           
+           
+        */
+        let whileteller =  3
+        while(whileteller > 15) {
+            whileteller++
+        }
+
+        /*
+          utregning av alle tall mellom x og y
+         */
+
+         const x = 1
+         const y = 100
+         let sum = 0
+
+         document.getElementById("start").innerHTML = x
+         document.getElementById("stop").innerHTML = y 
+
+         for(let teller =x; teller <= y; teller ++) {
+            sum += teller 
+            if(teller === y) {
+                document.getElementById("utregning").innerHTML += teller + " = " + sum 
+
+            } else {
+                document.getElementById("uregning").innerHTML  += teller  + " + "
+            }
+         }
+
+         /*  
+         vis heltall 
+         
+         */
+
+
+    </script>
+</body>
+</html>
