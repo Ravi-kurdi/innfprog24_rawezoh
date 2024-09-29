@@ -154,7 +154,7 @@
             [0, 4, 8,12],
             [1, 5, 9,13],
             [2, 6, 10,14],
-            [3, 7, 11,15]
+            [3, 7, 11,15],
             [0,5,10,15],
             [3,6,9,12]
         ];
@@ -203,26 +203,26 @@
             spill(8);
         });
         document.getElementById("celle9").addEventListener("click", function() {
-            spill(3);
+            spill(9);
         });
         // Det var skrevet fiel"addEventLner". Nå er den rettet til "addEventListener"
         document.getElementById("celle10").addEventListener("click", function() {
-            spill(4);
+            spill(10);
         });
         document.getElementById("celle11").addEventListener("click", function() {
-            spill(5);
+            spill(11);
         });
         document.getElementById("celle12").addEventListener("click", function() {
-            spill(6);
+            spill(12);
         });
         document.getElementById("celle13").addEventListener("click", function() {
-            spill(7);
+            spill(13);
         });
         document.getElementById("celle14").addEventListener("click", function() {
-            spill(8);
+            spill(14);
         });
         document.getElementById("celle15").addEventListener("click", function() {
-            spill(8);
+            spill(15);
         });
         /* Det ble laget ekstra EventListener for cellene */
         
@@ -268,7 +268,6 @@
                     /* Her ble det lagt inn setTimeout(function() { //kode som kjøres… }, 1000); 
                     slik at koden bruker 1 sekund før den sjekker om en spiller har vunnet. 
                     Den bruker en sekund for å sjekke om en spiller har vunnet.
-                    Hint: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout
                      */
                     
                     setTimeout(function() {
@@ -349,11 +348,10 @@
                 //Skriv ut hvilken spiller som har vunnet
                 document.getElementById("playerturn").innerHTML = "Spiller " + player + " har vunnet!";
 
-                /*  Her har vi endret bakgrunnsfargen i <div> med id playertun til gullfarget
+            /*  Her har vi endret bakgrunnsfargen i <div> med id playertun til gullfarget
                     når en spiller har vunnet spillet. målet er å bruke javaScript til å 
                     manipulere CSS eller HTML, istedenfor å endre den på CSS/HTML.
-                    Hint: https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp
-                     */
+             */
                 document.getElementById("playerturn").style.backgroundColor = "#FFD700";
 
 
