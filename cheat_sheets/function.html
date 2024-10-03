@@ -9,7 +9,29 @@
     
 
     <script>
-        
+        // DEklarere en funksjon
+        function myFirstFunction() {
+            console.log("Jeg kjører min første funksjon")
+        }
+        // Kjøre (kalle) funksjonen
+        myFirstFunction();
+        // Deklarere en funksjon med en parameter
+        function printName(name) {
+            console.log('Jeg heter' + name)
+        }
+        printName(" Rawez");
+
+        // 
+        function printDefaultName (name = "ingenting enda") {
+            console.log('Jeg heter' + name)
+        }
+        printName(" Rawez");
+
+        // lage en funksjon med e-post link (template)
+        function createEmailLink(email) {
+            return '<a hreft="mailto:${email}">{email}</a>'
+        }
+        createEmailLink()
     </script>
 </body>
 </html>
